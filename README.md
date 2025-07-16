@@ -25,5 +25,27 @@ This is a backend REST API built using **Spring Boot** and **PostgreSQL** for ma
 - Spring Boot layered architecture (Controller → Service → Repository)
 - Input validation and global exception handling
 
+
+https://github.com/NavyaNivas/LibraryManagement
   
+Setup Instructions
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/NavyaNivas/LibraryManagement
+   cd library-management-backend
+
+2.Configure PostgreSQL
+
+Create a PostgreSQL database named library_db
+
+Update your application.properties:
+spring.datasource.url=jdbc:postgresql://localhost:5432/library_db
+spring.datasource.username=your_db_username
+spring.datasource.password=your_db_password
+spring.jpa.hibernate.ddl-auto=update
+
+3.Run the Application
+mvn clean install
+mvn spring-boot:run
 
